@@ -2,7 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import { useNav } from "./providers/custom-hooks";
 import Header from "./components/Header";
 import HomePage from "./components/HomePage";
-import "./css/styles.css";
 import FullstackPortfolio from "./components/FullstackPortfolio";
 import FrontEndPortfolio from "./components/FrontEndPortfolio";
 

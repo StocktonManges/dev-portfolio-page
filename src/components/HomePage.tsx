@@ -35,12 +35,12 @@ export default function HomePage() {
       <section className="w-100 d-flex flex-column align-items-center py-5">
         <h2 className="pb-5 fs-1">Portfolio and Experience</h2>
         <div
-          className="project-type-wrapper w-50 my-4 position-relative"
+          className="page-type-wrapper overflow-hidden w-50 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.fullstackPortfolio);
           }}
         >
-          <div className="project-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
             <h1>Fullstack</h1>
           </div>
           <div className="w-100">
@@ -49,12 +49,12 @@ export default function HomePage() {
         </div>
 
         <div
-          className="project-type-wrapper w-50 my-4 position-relative"
+          className="page-type-wrapper overflow-hidden w-50 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.frontEndPortfolio);
           }}
         >
-          <div className="project-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
             <h1>Front End</h1>
           </div>
           <div className="w-100">
@@ -62,8 +62,8 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="project-type-wrapper w-50 my-4 position-relative">
-          <div className="project-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+        <div className="page-type-wrapper overflow-hidden w-50 my-4 position-relative">
+          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
             <h1>Resume and GitHub</h1>
           </div>
           <div className="w-100 d-flex">

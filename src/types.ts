@@ -1,6 +1,6 @@
 import { NavigateFunction } from "react-router-dom";
 
-export type ProjectList = "fullstack" | "front-end" | "resume-and-github";
+export type Page = "fullstack" | "front-end" | "resume-and-github";
 
 export type FullstackCardInfo = {
   title: string;

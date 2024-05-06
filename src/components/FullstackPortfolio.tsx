@@ -1,40 +1,61 @@
-import { fullstackProjects } from "../utils";
+import { fullstackPortfolio } from "../utils";
 
 export default function FullstackPortfolio() {
   return (
-    <section>
-      <h1>Fullstack Projects</h1>
-      <div>
-        {fullstackProjects.map(
+    <section className="w-100 d-flex flex-column align-items-center">
+      <h1 className="my-5">Fullstack Portfolio</h1>
+      <div className="w-50">
+        {fullstackPortfolio.map(
           ({ title, website, techStack, shortDescription, github }) => (
-            <div key={title} className="border border-primary">
-              <h2>{title}</h2>
-              <a href={website} target="_blank">
-                Website Link
-              </a>
-              <div>
-                <a href={github.frontEnd} target="_blank">
-                  Front End GitHub Repository
-                </a>
+            <div key={title} className="bg-primary rounded-4 p-1">
+              <h2 className="p-3 text-white w-fit-content m-auto">{title}</h2>
+              <div className="rounded-bottom-4 bg-white w-100 d-flex flex-column align-items-center">
+                <div className="my-3 d-flex justify-content-center w-100 text-center">
+                  <a
+                    className="w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href={website}
+                    target="_blank"
+                  >
+                    Website Link
+                  </a>
+                  <a
+                    className="border-start border-end border-primary w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href={github.frontEnd}
+                    target="_blank"
+                  >
+                    Front End GitHub
+                  </a>
+                  <a
+                    className="w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    href={github.backend}
+                    target="_blank"
+                  >
+                    Backend GitHub
+                  </a>
+                </div>
+
+                <div className="d-flex justify-content-evenly w-75 my-3 w-100">
+                  <ul className="list-group w-25">
+                    <li className="list-group-item fs-5 active">Front End</li>
+                    {techStack.frontEnd.map((item) => (
+                      <li className="list-group-item" key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <ul className="list-group w-25">
+                    <li className="list-group-item active fs-5">Backend</li>
+                    {techStack.backend.map((item) => (
+                      <li className="list-group-item" key={item}>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="w-75 text-center my-3">{shortDescription}</p>
               </div>
-              <div>
-                <a href={github.backend} target="_blank">
-                  Backend GitHub Repository
-                </a>
-              </div>
-              <div className="d-flex">
-                <ul>
-                  {techStack.frontEnd.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                <ul>
-                  {techStack.backend.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-              <p>{shortDescription}</p>
             </div>
           )
         )}

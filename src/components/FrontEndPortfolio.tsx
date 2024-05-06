@@ -1,11 +1,11 @@
-import { frontEndProjects } from "../utils";
+import { frontEndPortfolio } from "../utils";
 
 export default function FrontEndPortfolio() {
   return (
     <section>
-      <h1>Front End Projects</h1>
+      <h1>Front End Portfolio</h1>
       <div>
-        {frontEndProjects.map(
+        {frontEndPortfolio.map(
           ({ title, website, techStack, shortDescription, github }) => (
             <div key={title} className="border border-primary">
               <h2>{title}</h2>

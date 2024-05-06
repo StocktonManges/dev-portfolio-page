@@ -1,6 +1,6 @@
 import { FrontEndCardInfo, FullstackCardInfo } from "./types";
 
-export const fullstackProjects = <FullstackCardInfo[]>[
+export const fullstackPortfolio = <FullstackCardInfo[]>[
   {
     title: "Chitter",
     website: "https://chitter-the-new-twitter.netlify.app",
@@ -8,7 +8,8 @@ export const fullstackProjects = <FullstackCardInfo[]>[
       frontEnd: ["React", "Typescript", "Bootstrap", "React Router Dom"],
       backend: ["Node.js", "Express", "Zod", "bcrypt"],
     },
-    shortDescription: "A wonderful app",
+    shortDescription:
+      "Chitter is a very simple version of Twitter. You can create an account, look at posts and publish posts of your own.",
     longDescription: "This app is so friggin wonderful.",
     github: {
       frontEnd: "https://github.com/StocktonManges/chitter-frontend",
@@ -17,7 +18,7 @@ export const fullstackProjects = <FullstackCardInfo[]>[
   },
 ];
 
-export const frontEndProjects = <FrontEndCardInfo[]>[
+export const frontEndPortfolio = <FrontEndCardInfo[]>[
   {
     title: "Elevation Peaks",
     website: "https://elevation-peaks-draft.netlify.app/",

@@ -1,0 +1,52 @@
+$primary: #014069;
+$secondary: #692a01;
+// $list-group-active-bg: $secondary;
+$utilities: (
+  "width": (
+    property: width,
+    class: w,
+    values: (
+      10: 10%,
+      25: 25%,
+      30: 30%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto,
+      fit-content: fit-content,
+    ),
+  ),
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+img {
+  width: 100%;
+}
+
+.page-type-title-wrapper {
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.page-type-title-wrapper:hover {
+  opacity: 1;
+}
+
+.page-type-title-wrapper h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.page-type-wrapper div:last-child {
+  transition: 0.3s;
+  z-index: 0;
+}
+
+.page-type-wrapper:hover div:last-child {
+  transform: scale(1.2);
+}

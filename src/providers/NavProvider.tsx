@@ -7,6 +7,9 @@ export const NavProvider = ({ children }: { children: ReactNode }) => {
 
   const navUrls = {
     home: "/",
+    fullstackPortfolio: "/portfolio/fullstack",
+    frontEndPortfolio: "/portfolio/front-end",
+    resumeAndGitHub: "/portfolio/backend",
   };
 
   return (

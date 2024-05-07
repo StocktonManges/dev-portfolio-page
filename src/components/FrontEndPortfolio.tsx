@@ -1,8 +1,10 @@
 import { frontEndPortfolio } from "../utils";
+import HomeButton from "./HomeButton";
 
 export default function FullstackPortfolio() {
   return (
     <section className="w-100 d-flex flex-column align-items-center">
+      <HomeButton />
       <h1 className="mt-5">Front End Portfolio</h1>
       <div className="w-50">
         {frontEndPortfolio.map(

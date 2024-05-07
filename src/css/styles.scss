@@ -49,3 +49,11 @@ img {
 .page-type-wrapper:hover div:last-child {
   transform: scale(1.2);
 }
+
+.home-button {
+  position: fixed;
+  top: 2.5%;
+  right: 5%;
+  height: 75px;
+  width: 75px;
+}

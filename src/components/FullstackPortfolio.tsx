@@ -39,15 +39,19 @@ export default function FullstackPortfolio() {
                 <p className="w-75 text-center my-3">{shortDescription}</p>
 
                 <div className="my-3 d-flex justify-content-center w-100 text-center">
+                  {!website ? null : (
+                    <a
+                      className={`w-30 ${
+                        website && "border-end border-primary"
+                      } link-underline link-underline-opacity-0 link-underline-opacity-100-hover`}
+                      href={website}
+                      target="_blank"
+                    >
+                      Website Link
+                    </a>
+                  )}
                   <a
-                    className="w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                    href={website}
-                    target="_blank"
-                  >
-                    Website Link
-                  </a>
-                  <a
-                    className="border-start border-end border-primary w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    className="border-end border-primary w-30 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                     href={github.frontEnd}
                     target="_blank"
                   >

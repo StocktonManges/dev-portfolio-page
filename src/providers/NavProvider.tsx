@@ -9,7 +9,7 @@ export const NavProvider = ({ children }: { children: ReactNode }) => {
     home: "/",
     fullstackPortfolio: "/portfolio/fullstack",
     frontEndPortfolio: "/portfolio/front-end",
-    resumeAndGitHub: "/portfolio/backend",
+    resumeAndGitHub: "/resume-and-github",
   };
 
   return (

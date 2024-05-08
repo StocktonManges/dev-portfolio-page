@@ -3,18 +3,21 @@ import HomeButton from "./HomeButton";
 
 export default function FullstackPortfolio() {
   return (
-    <section className="w-100 d-flex flex-column align-items-center">
+    <section className="container d-flex flex-column align-items-center">
       <HomeButton />
       <h1 className="mt-5">Front End Portfolio</h1>
-      <div className="w-50">
+      <div className="front-end-card w-md-50">
         {frontEndPortfolio.map(
           ({ title, website, techStack, shortDescription, github }) => (
-            <div key={title} className="card bg-primary rounded-4 p-1 my-5">
+            <div
+              key={title}
+              className="card bg-primary rounded-4 p-1 my-5 text-center"
+            >
               <h2 className="card-header p-3 text-white w-fit-content m-auto">
                 {title}
               </h2>
               <div className="card-body rounded-bottom-4 bg-white w-100 d-flex flex-column align-items-center">
-                <ul className="list-group w-25 text-center">
+                <ul className="list-group w-sm-50 w-md-25 text-center">
                   <li className="list-group-item fs-5 active">Tech Stack</li>
                   {techStack.map((item) => (
                     <li className="list-group-item" key={item}>

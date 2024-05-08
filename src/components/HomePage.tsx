@@ -5,14 +5,14 @@ export default function HomePage() {
 
   return (
     <main>
-      <section className="w-100 d-flex justify-content-center my-5">
-        <div className="w-50 d-flex justify-content-between align-items-center">
-          <div className="w-50 pe-4">
+      <section className="container d-flex justify-content-center my-5">
+        <div className="w-75 d-flex flex-column flex-xl-row justify-content-between align-items-center">
+          <div className="profile-img w-lg-50 mw-400px pe-xl-4">
             <img src="../assets/bridal-headshot.jpg" alt="profile" />
           </div>
-          <div className="w-50 text-center d-flex flex-column">
-            <h2 className="fs-1">About Me</h2>
-            <p className="text-center fs-5">
+          <div className="w-lg-50 text-center d-flex flex-column">
+            <h2 className="fs-1 my-4 mt-xl-0">About Me</h2>
+            <p className="fs-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
               dolorum error vitae minima obcaecati in aspernatur similique ut
               commodi? Voluptate quos numquam consectetur quam minus. Neque
@@ -20,7 +20,7 @@ export default function HomePage() {
               cumque sunt cupiditate vero nemo officia repudiandae doloremque
               quibusdam, laboriosam molestias iste itaque distinctio illo!
             </p>
-            <p className="text-center fs-5">
+            <p className="fs-5">
               Natus nisi error eum vitae distinctio accusamus non repudiandae
               eos tempora nobis deserunt dolores eveniet, dicta facere
               perferendis sint odio ab? Minima, totam ab, dolorem expedita ex
@@ -32,10 +32,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="w-100 d-flex flex-column align-items-center py-5">
+      <section className="container d-flex flex-column align-items-center py-5">
         <h2 className="pb-5 fs-1">Portfolio and Experience</h2>
         <div
-          className="page-type-wrapper overflow-hidden w-50 my-4 position-relative"
+          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.fullstackPortfolio);
           }}
@@ -49,7 +49,7 @@ export default function HomePage() {
         </div>
 
         <div
-          className="page-type-wrapper overflow-hidden w-50 my-4 position-relative"
+          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.frontEndPortfolio);
           }}
@@ -62,9 +62,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="page-type-wrapper overflow-hidden w-50 my-4 position-relative">
+        <div
+          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
+          onClick={() => {
+            navigate(navUrls.resumeAndGitHub);
+          }}
+        >
           <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
-            <h1>Resume and GitHub</h1>
+            <h1 className="text-center">Resume and GitHub</h1>
           </div>
           <div className="w-100 d-flex">
             <div className="w-50">

@@ -23,6 +23,10 @@ img {
   width: 100%;
 }
 
+.profile-img {
+  max-width: 400px;
+}
+
 .page-type-title-wrapper {
   opacity: 0;
   transition: 0.3s;
@@ -56,4 +60,21 @@ img {
   right: 5%;
   height: 75px;
   width: 75px;
+  z-index: 50;
+}
+
+.front-end-card {
+  max-width: 936px;
+}
+
+@include media-breakpoint-down(md) {
+  .page-type-title-wrapper h1 {
+    font-size: 3rem;
+  }
+}
+
+@include media-breakpoint-only(xs) {
+  .page-type-title-wrapper h1 {
+    font-size: 2rem;
+  }
 }

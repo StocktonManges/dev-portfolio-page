@@ -5,7 +5,7 @@ export const fullstackPortfolio = <FullstackCardInfo[]>[
     title: "Chitter",
     website: "https://chitter-the-new-twitter.netlify.app",
     techStack: {
-      frontEnd: ["React", "Typescript", "Bootstrap", "React Router Dom"],
+      frontEnd: ["React JS", "Typescript", "Bootstrap", "React Router Dom"],
       backend: ["Node.js", "Express", "Zod", "bcrypt"],
     },
     shortDescription:
@@ -21,12 +21,12 @@ export const fullstackPortfolio = <FullstackCardInfo[]>[
 export const frontEndPortfolio = <FrontEndCardInfo[]>[
   {
     title: "Elevation Peaks Landing Page",
-    website: "https://elevation-peaks-draft.netlify.app/",
-    techStack: ["React", "Email JS", "TypeScript"],
+    website: "https://elevation-peaks.netlify.app/",
+    techStack: ["React JS", "HTML", "CSS", "Email JS", "TypeScript"],
     shortDescription:
-      "A landing page and contact form for the marketing company: Elevation Peaks.",
+      "A landing page and functioning contact form for Elevation Peaks.",
     longDescription:
-      "A mobile responsive, React JS webpage designed after Elevation Peaks' actual landing page. It utilizes React state for form validation throughout the webpage and EmailJS to enable email notifications once a form is submitted.",
+      "A mobile responsive, React JS webpage designed after Elevation Peaks' actual landing page. It utilizes React state for form validation and EmailJS to enable email notifications once a form is submitted.",
     github: "https://github.com/StocktonManges/elevation-peaks",
   },
   {
@@ -42,7 +42,7 @@ export const frontEndPortfolio = <FrontEndCardInfo[]>[
   {
     title: "Pup-E-Picker",
     website: null,
-    techStack: ["React", "HTML", "CSS", "Zod", "TypeScript", "JSON Server"],
+    techStack: ["React JS", "HTML", "CSS", "Zod", "TypeScript", "JSON Server"],
     shortDescription:
       "This is a simple app designed to display a list of dogs that can be deleted, created and favorited. ",
     longDescription: [
@@ -63,5 +63,15 @@ export const frontEndPortfolio = <FrontEndCardInfo[]>[
     longDescription:
       "A simple webpage where a user can favorite or unfavorite pieces of art that are pulled from the Art Institute of Chicago's REST API.",
     github: "https://github.com/StocktonManges/art-gallery-api",
+  },
+  {
+    title: "Name That Fish!",
+    website: "https://name-that-fish.netlify.app/",
+    techStack: ["HTML", "CSS", "TypeScript", "React JS"],
+    shortDescription:
+      "A picture of a fish is displayed and the user has to guess its type. There is a functional component version and a class component version but both function the exact same way for the user.",
+    longDescription:
+      "A game where a picture of a fish is displayed and the user has to guess its type. There is a functional component version and a class component version but both function the exact same way for the user.",
+    github: "https://github.com/StocktonManges/name-that-fish-ts",
   },
 ];

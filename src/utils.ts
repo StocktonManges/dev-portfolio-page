@@ -41,7 +41,7 @@ export const frontEndPortfolio = <FrontEndCardInfo[]>[
   },
   {
     title: "Pup-E-Picker",
-    website: null,
+    website: undefined,
     techStack: ["React JS", "HTML", "CSS", "Zod", "TypeScript", "JSON Server"],
     shortDescription:
       "This is a simple app designed to display a list of dogs that can be deleted, created and favorited. ",

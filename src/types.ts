@@ -4,7 +4,7 @@ export type Page = "fullstack" | "front-end" | "resume-and-github";
 
 export type FullstackCardInfo = {
   title: string;
-  website: string | null;
+  website: string | undefined;
   techStack: {
     frontEnd: string[];
     backend: string[];
@@ -19,7 +19,7 @@ export type FullstackCardInfo = {
 
 export type FrontEndCardInfo = {
   title: string;
-  website: string | null;
+  website: string | undefined;
   techStack: string[];
   shortDescription: string;
   longDescription: string | string[];
@@ -30,7 +30,7 @@ type NavUrls = {
   home: string;
   fullstackPortfolio: string;
   frontEndPortfolio: string;
-  resumeAndGitHub: string;
+  experience: string;
 };
 
 export type TypeNavProvider = {

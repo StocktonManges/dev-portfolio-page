@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import FullstackPortfolio from "./components/FullstackPortfolio";
 import FrontEndPortfolio from "./components/FrontEndPortfolio";
-import ResumeAndGitHub from "./components/ResumeAndGitHub";
+import Experience from "./components/Experience";
+import Error404 from "./components/Error404";
 
 export default function App() {
   const { navUrls } = useNav();
@@ -22,8 +23,9 @@ export default function App() {
             path={navUrls.frontEndPortfolio}
             element={<FrontEndPortfolio />}
           />
-          <Route path={navUrls.resumeAndGitHub} element={<ResumeAndGitHub />} />
+          <Route path={navUrls.experience} element={<Experience />} />
         </Route>
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </>
   );

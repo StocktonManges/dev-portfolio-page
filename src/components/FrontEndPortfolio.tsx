@@ -3,10 +3,10 @@ import HomeButton from "./HomeButton";
 
 export default function FullstackPortfolio() {
   return (
-    <section className="container d-flex flex-column align-items-center">
+    <section className="container d-flex flex-column align-items-center mb-5">
       <HomeButton />
       <h1 className="mt-5">Front End Portfolio</h1>
-      <div className="front-end-card w-md-50">
+      <div className="front-end-card-wrapper w-md-50">
         {frontEndPortfolio.map(
           ({ title, website, techStack, shortDescription, github }) => (
             <div
@@ -29,19 +29,20 @@ export default function FullstackPortfolio() {
                 <p className="w-75 text-center my-3">{shortDescription}</p>
 
                 <div className="my-3 d-flex justify-content-center w-100 text-center">
-                  {!website ? null : (
-                    <a
-                      className={`w-10 ${
-                        website && "border-end border-primary"
-                      } link-underline link-underline-opacity-0 link-underline-opacity-100-hover`}
-                      href={website}
-                      target="_blank"
-                    >
-                      Website
-                    </a>
+                  {website && (
+                    <>
+                      <a
+                        className={`w-auto link-underline link-underline-opacity-0 link-underline-opacity-100-hover`}
+                        href={website}
+                        target="_blank"
+                      >
+                        Website
+                      </a>
+                      <span className="border-end border-primary mx-2" />
+                    </>
                   )}
                   <a
-                    className="w-10 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    className="w-auto link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                     href={github}
                     target="_blank"
                   >

@@ -32,15 +32,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="container d-flex flex-column align-items-center py-5">
-        <h2 className="pb-5 fs-1">Portfolio and Experience</h2>
+      <section className="container d-flex flex-column align-items-center pb-5 ">
+        <h2 className="pb-md-5 pb-4 fs-1 w-md-100 w-50 text-center text-wrap">
+          Portfolio and Experience
+        </h2>
         <div
-          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
+          className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.fullstackPortfolio);
           }}
         >
-          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+          <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
             <h1>Fullstack</h1>
           </div>
           <div className="w-100">
@@ -49,12 +51,12 @@ export default function HomePage() {
         </div>
 
         <div
-          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
+          className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
             navigate(navUrls.frontEndPortfolio);
           }}
         >
-          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+          <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
             <h1>Front End</h1>
           </div>
           <div className="w-100">
@@ -63,13 +65,13 @@ export default function HomePage() {
         </div>
 
         <div
-          className="page-type-wrapper overflow-hidden w-75 my-4 position-relative"
+          className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
-            navigate(navUrls.resumeAndGitHub);
+            navigate(navUrls.experience);
           }}
         >
-          <div className="page-type-title-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
-            <h1 className="text-center">Resume and GitHub</h1>
+          <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
+            <h1 className="text-center">Experience</h1>
           </div>
           <div className="w-100 d-flex">
             <div className="w-50">

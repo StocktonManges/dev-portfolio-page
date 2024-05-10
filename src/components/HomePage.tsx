@@ -1,5 +1,5 @@
 import { useNav } from "../providers/custom-hooks";
-import profileImg from "../../assets/bridal-headshot.jpg";
+import profileImg from "../../assets/headshot.jpg";
 import fullstackImg from "../../assets/fullstack.png";
 import frontEndImg from "../../assets/front-end.jpg";
 import resumeImg from "../../assets/resume.jpg";

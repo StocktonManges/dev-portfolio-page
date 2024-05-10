@@ -1,4 +1,9 @@
 import { useNav } from "../providers/custom-hooks";
+import profileImg from "../../assets/bridal-headshot.jpg";
+import fullstackImg from "../../assets/fullstack.png";
+import frontEndImg from "../../assets/front-end.jpg";
+import resumeImg from "../../assets/resume.jpg";
+import githubImg from "../../assets/github.svg";
 
 export default function HomePage() {
   const { navigate, navUrls } = useNav();
@@ -8,7 +13,7 @@ export default function HomePage() {
       <section className="container d-flex justify-content-center my-5">
         <div className="w-75 d-flex flex-column flex-xl-row justify-content-between align-items-center">
           <div className="profile-img w-lg-50 mw-400px pe-xl-4">
-            <img src="../assets/bridal-headshot.jpg" alt="profile" />
+            <img src={profileImg} alt="profile" />
           </div>
           <div className="w-lg-50 text-center d-flex flex-column">
             <h2 className="fs-1 my-4 mt-xl-0">About Me</h2>
@@ -45,7 +50,7 @@ export default function HomePage() {
             <h1>Fullstack</h1>
           </div>
           <div className="w-100">
-            <img src="../assets/fullstack.png" alt="fullstack" />
+            <img src={fullstackImg} alt="fullstack" />
           </div>
         </div>
 
@@ -59,7 +64,7 @@ export default function HomePage() {
             <h1>Front End</h1>
           </div>
           <div className="w-100">
-            <img src="../assets/front-end.jpg" alt="front end" />
+            <img src={frontEndImg} alt="front end" />
           </div>
         </div>
 
@@ -74,10 +79,10 @@ export default function HomePage() {
           </div>
           <div className="w-100 d-flex">
             <div className="w-50">
-              <img src="../assets/resume.jpg" alt="resume" />
+              <img src={resumeImg} alt="resume" />
             </div>
             <div className="w-50">
-              <img src="../assets/github.svg" alt="GitHub" />
+              <img src={githubImg} alt="GitHub" />
             </div>
           </div>
         </div>

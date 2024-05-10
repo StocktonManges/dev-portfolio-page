@@ -1,4 +1,4 @@
-import { NavigateFunction } from "react-router-dom";
+import { NavigateOptions } from "react-router-dom";
 
 export type Page = "fullstack" | "front-end" | "resume-and-github";
 
@@ -34,6 +34,6 @@ type NavUrls = {
 };
 
 export type TypeNavProvider = {
-  navigate: NavigateFunction;
+  navigateTo: (to: string, options?: NavigateOptions | undefined) => void;
   navUrls: NavUrls;
 };

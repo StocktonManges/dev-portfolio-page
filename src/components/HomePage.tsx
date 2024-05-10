@@ -6,7 +6,7 @@ import resumeImg from "../../assets/resume.jpg";
 import githubImg from "../../assets/github.svg";
 
 export default function HomePage() {
-  const { navigate, navUrls } = useNav();
+  const { navigateTo, navUrls } = useNav();
 
   return (
     <main>
@@ -43,7 +43,7 @@ export default function HomePage() {
         <div
           className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
-            navigate(navUrls.fullstackPortfolio);
+            navigateTo(navUrls.fullstackPortfolio);
           }}
         >
           <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
@@ -57,7 +57,7 @@ export default function HomePage() {
         <div
           className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
-            navigate(navUrls.frontEndPortfolio);
+            navigateTo(navUrls.frontEndPortfolio);
           }}
         >
           <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">
@@ -71,7 +71,7 @@ export default function HomePage() {
         <div
           className="hover-zoom-button-wrapper overflow-hidden w-75 my-4 position-relative"
           onClick={() => {
-            navigate(navUrls.experience);
+            navigateTo(navUrls.experience);
           }}
         >
           <div className="title-overlay-wrapper position-absolute top-0 h-100 w-100 d-flex justify-content-center align-items-center">

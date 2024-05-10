@@ -1,9 +1,14 @@
 import { ReactNode } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavigateOptions, useNavigate } from "react-router-dom";
 import { NavContext } from "./custom-hooks";
 
 export const NavProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
+
+  const navigateTo = (to: string, options?: NavigateOptions | undefined) => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    navigate(to, options);
+  };
 
   const navUrls = {
     home: "/",
@@ -15,7 +20,7 @@ export const NavProvider = ({ children }: { children: ReactNode }) => {
   return (
     <NavContext.Provider
       value={{
-        navigate,
+        navigateTo,
         navUrls,
       }}
     >

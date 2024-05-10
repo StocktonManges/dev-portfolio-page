@@ -13,20 +13,20 @@ export default function HomePage() {
           <div className="w-lg-50 text-center d-flex flex-column">
             <h2 className="fs-1 my-4 mt-xl-0">About Me</h2>
             <p className="fs-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-              dolorum error vitae minima obcaecati in aspernatur similique ut
-              commodi? Voluptate quos numquam consectetur quam minus. Neque
-              accusamus placeat quaerat labore officiis, quos similique aut
-              cumque sunt cupiditate vero nemo officia repudiandae doloremque
-              quibusdam, laboriosam molestias iste itaque distinctio illo!
+              My name is Stockton Manges and I'm a dedicated fullstack
+              programmer with a passion for transforming ideas into reality
+              through code. I find it especially fulfilling when I'm able to
+              help my team successfully reach goals that bring us closer to our
+              ultimate vision. With a proven history of effective communication
+              and learning on the fly (as evidenced by my job resume), I'm
+              confident I can support any team in their endeavors to reach and
+              surpass the most challenging of objectives.
             </p>
             <p className="fs-5">
-              Natus nisi error eum vitae distinctio accusamus non repudiandae
-              eos tempora nobis deserunt dolores eveniet, dicta facere
-              perferendis sint odio ab? Minima, totam ab, dolorem expedita ex
-              illo reiciendis sequi odit repudiandae, ipsum unde in nostrum
-              obcaecati magnam ut amet dolore harum voluptatibus ad vel
-              voluptatem quod! Dicta delectus porro sunt!
+              I'm committed to continuous learning and believe there are never
+              too many opportunities to grow. Explore my portfolio to see
+              examples of my work, and feel free to reach out for collaborations
+              or inquiries!
             </p>
           </div>
         </div>

@@ -18,15 +18,14 @@ export default function HomePage() {
               through code. I find it especially fulfilling when I'm able to
               help my team successfully reach goals that bring us closer to our
               ultimate vision. With a proven history of effective communication
-              and learning on the fly (as evidenced by my job resume), I'm
-              confident I can support any team in their endeavors to reach and
-              surpass the most challenging of objectives.
+              and adapting quickly to new challenges, as demonstrated by my
+              resume, I'm confident I can support any team in their endeavors to
+              reach and surpass the most challenging of objectives.
             </p>
             <p className="fs-5">
-              I'm committed to continuous learning and believe there are never
-              too many opportunities to grow. Explore my portfolio to see
-              examples of my work, and feel free to reach out for collaborations
-              or inquiries!
+              I'm committed to continuous learning and believe in seizing every
+              opportunity for growth. Explore my portfolio to see examples of my
+              work, and feel free to reach out for collaborations or inquiries!
             </p>
           </div>
         </div>

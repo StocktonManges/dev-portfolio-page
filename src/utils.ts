@@ -30,7 +30,7 @@ export const frontEndPortfolio = <FrontEndCardInfo[]>[
     github: "https://github.com/StocktonManges/elevation-peaks",
   },
   {
-    title: "Harvest React Information Website",
+    title: "Harvest React Informational Website",
     website: "https://hr-migey-project.netlify.app/",
     techStack: ["HTML", "CSS"],
     shortDescription:

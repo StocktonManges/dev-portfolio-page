@@ -10,7 +10,7 @@ export default function Experience() {
   const jobResumeRef = useRef<HTMLAnchorElement>(null);
 
   return (
-    <section className="experience-link-wrapper container text-center d-flex flex-column align-items-center">
+    <section className="experience-page-wrapper container text-center d-flex flex-column align-items-center">
       <HomeButton />
       <h1 className="my-5">Experience</h1>
 

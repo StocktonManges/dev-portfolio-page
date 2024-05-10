@@ -3,7 +3,7 @@ import HomeButton from "./HomeButton";
 
 export default function FullstackPortfolio() {
   return (
-    <section className="container d-flex flex-column align-items-center mb-5">
+    <section className="front-end-page-wrapper container d-flex flex-column align-items-center">
       <HomeButton />
       <h1 className="mt-5">Front End Portfolio</h1>
       <div className="front-end-card-wrapper w-md-50">

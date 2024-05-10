@@ -63,21 +63,26 @@ img {
   z-index: 50;
 }
 
-.front-end-card-wrapper {
-  max-width: 936px;
+.front-end-card-wrapper,
+.fullstack-card-wrapper {
+  max-width: 840px;
 }
 
-.front-end-card-wrapper ul {
+.fullstack-card-wrapper ul {
   width: 125px;
 }
 
-.experience-link-wrapper a {
+.front-end-card-wrapper ul {
+  width: max-content;
+}
+
+.experience-page-wrapper a {
   padding: 5rem;
   margin: 1rem;
-  max-width: 300px;
-  min-width: 300px;
-  max-height: 300px;
-  min-height: 300px;
+  max-width: calc(200px + 15 * 1vw);
+  min-width: calc(200px + 15 * 1vw);
+  max-height: 15vw;
+  min-height: 15vw;
 }
 
 .error-page h1 {
@@ -92,6 +97,12 @@ img {
   .home-button {
     bottom: 1.5rem;
     top: auto;
+  }
+
+  .experience-page-wrapper,
+  .front-end-page-wrapper,
+  .fullstack-page-wrapper {
+    margin-bottom: 5rem;
   }
 }
 

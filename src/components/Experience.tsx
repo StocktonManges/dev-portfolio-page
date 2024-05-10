@@ -1,13 +1,10 @@
 import HomeButton from "./HomeButton";
-import { useRef } from "react";
-import programmingResume from "../../assets/stockton-manges-programming-resume.pdf";
-import jobResume from "../../assets/stockton-manges-job-resume.pdf";
 
 export default function Experience() {
-  const githubRef = useRef<HTMLAnchorElement>(null);
-  const linkedInRef = useRef<HTMLAnchorElement>(null);
-  const programmingResumeRef = useRef<HTMLAnchorElement>(null);
-  const jobResumeRef = useRef<HTMLAnchorElement>(null);
+  const programmingResume =
+    "https://docs.google.com/document/d/1lrQ6TN8MYsMwog_cso58g7SpOatRjKN8r9Dg5W_49ms/edit?usp=sharing";
+  const jobResume =
+    "https://docs.google.com/document/d/1OqovXJJSsEnC7YWjROwhyCKskuTidlgzJB_hCDvvc-Y/edit?usp=sharing";
 
   return (
     <section className="experience-page-wrapper container text-center d-flex flex-column align-items-center">
@@ -16,7 +13,6 @@ export default function Experience() {
 
       <div className="row w-100 d-flex flex-wrap justify-content-center">
         <a
-          ref={githubRef}
           target="_blank"
           href="https://github.com/StocktonManges"
           className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
@@ -25,7 +21,6 @@ export default function Experience() {
         </a>
 
         <a
-          ref={linkedInRef}
           target="_blank"
           href="https://www.linkedin.com/in/stockton-manges-529382227/"
           className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
@@ -36,20 +31,16 @@ export default function Experience() {
 
       <div className="row w-100 d-flex flex-wrap justify-content-center">
         <a
-          ref={programmingResumeRef}
           target="_blank"
           href={programmingResume}
-          download={programmingResume}
           className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
         >
           <strong>Programming Resume</strong>
         </a>
 
         <a
-          ref={jobResumeRef}
           target="_blank"
           href={jobResume}
-          download={jobResume}
           className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
         >
           <strong>Job Resume</strong>

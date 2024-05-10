@@ -1,7 +1,7 @@
 import HomeButton from "./HomeButton";
 import { useRef } from "react";
-import programmingResume from "../../assets/programming-resume.pdf";
-import jobResume from "../../assets/work-history-resume.pdf";
+import programmingResume from "../../assets/stockton-manges-programming-resume.pdf";
+import jobResume from "../../assets/stockton-manges-job-resume.pdf";
 
 export default function Experience() {
   const githubRef = useRef<HTMLAnchorElement>(null);

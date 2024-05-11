@@ -8,7 +8,7 @@ export default function FullstackPortfolio() {
         {fullstackPortfolio.map(
           ({ title, website, techStack, shortDescription, github }) => (
             <div key={title} className="card bg-primary rounded-4 p-1 my-5">
-              <h2 className="card-header p-3 text-white w-fit-content m-auto">
+              <h2 className="card-header p-3 text-black w-fit-content m-auto bg-primary">
                 {title}
               </h2>
               <div className="card-body rounded-bottom-4 bg-white w-100 d-flex flex-column align-items-center">
@@ -16,7 +16,9 @@ export default function FullstackPortfolio() {
 
                 <div className="d-flex justify-content-evenly w-75 my-3 w-100">
                   <ul className="list-group">
-                    <li className="list-group-item fs-5 active">Front End</li>
+                    <li className="list-group-item fs-5 active text-black">
+                      Front End
+                    </li>
                     {techStack.frontEnd.map((item) => (
                       <li className="list-group-item" key={item}>
                         {item}
@@ -25,7 +27,9 @@ export default function FullstackPortfolio() {
                   </ul>
 
                   <ul className="list-group">
-                    <li className="list-group-item active fs-5">Backend</li>
+                    <li className="list-group-item active fs-5 text-black">
+                      Backend
+                    </li>
                     {techStack.backend.map((item) => (
                       <li className="list-group-item" key={item}>
                         {item}
@@ -47,22 +51,22 @@ export default function FullstackPortfolio() {
                         Website Link
                       </a>
 
-                      <span className="border-end border-primary mx-2" />
+                      <span className="border-end border-black mx-2" />
                     </>
                   )}
 
                   <a
-                    className="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    className="link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover"
                     href={github.frontEnd}
                     target="_blank"
                   >
                     Front End GitHub
                   </a>
 
-                  <span className="border-end border-primary mx-2" />
+                  <span className="border-end border-black mx-2" />
 
                   <a
-                    className="link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                    className="link-underline-secondary link-underline-opacity-0 link-underline-opacity-100-hover"
                     href={github.backend}
                     target="_blank"
                   >

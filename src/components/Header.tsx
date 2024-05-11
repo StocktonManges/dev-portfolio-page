@@ -10,9 +10,9 @@ export default function Header() {
 
   return (
     <>
-      <header className="bg-primary p-3 text-center text-white d-flex flex-column justify-content-center align-items-center position-relative">
+      <header className="bg-black p-3 text-center text-primary d-flex flex-column justify-content-center align-items-center position-relative">
         <button
-          className="d-md-none btn btn-primary position-absolute start-5px top-5px p-1 text-white"
+          className="d-md-none btn btn-black position-absolute start-5px top-5px p-1 text-primary"
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
@@ -25,12 +25,12 @@ export default function Header() {
         </h2>
         <Collapse in={navOpen}>
           <div className="d-md-flex">
-            <ul className="nav nav-pills h-0 overflow-hidden bg-primary align-items-center justify-content-center flex-column flex-md-row d-md-flex">
+            <ul className="nav nav-pills h-0 overflow-hidden bg-black align-items-center justify-content-center flex-column flex-md-row d-md-flex">
               <li className="nav-item">
                 <a
                   href={navUrls.home}
-                  className={`nav-link my-1 text-white-hover ${
-                    pathname === navUrls.home && "active"
+                  className={`nav-link my-1 ${
+                    pathname === navUrls.home && "text-secondary"
                   }`}
                 >
                   Home
@@ -39,8 +39,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.fullstackPortfolio}
-                  className={`nav-link my-1 text-white-hover ${
-                    pathname === navUrls.fullstackPortfolio && "active"
+                  className={`nav-link my-1 ${
+                    pathname === navUrls.fullstackPortfolio && "text-secondary"
                   }`}
                 >
                   Fullstack
@@ -49,8 +49,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.frontEndPortfolio}
-                  className={`nav-link my-1 text-white-hover ${
-                    pathname === navUrls.frontEndPortfolio && "active"
+                  className={`nav-link my-1 ${
+                    pathname === navUrls.frontEndPortfolio && "text-secondary"
                   }`}
                 >
                   Front End
@@ -59,8 +59,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.experience}
-                  className={`nav-link my-1 text-white-hover ${
-                    pathname === navUrls.experience && "active"
+                  className={`nav-link my-1 ${
+                    pathname === navUrls.experience && "text-secondary"
                   }`}
                 >
                   Experience
@@ -69,8 +69,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.contact}
-                  className={`nav-link my-1 text-white-hover ${
-                    pathname === navUrls.contact && "active"
+                  className={`nav-link my-1 ${
+                    pathname === navUrls.contact && "text-secondary"
                   }`}
                 >
                   Contact

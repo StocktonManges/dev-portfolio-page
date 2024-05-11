@@ -1,5 +1,8 @@
-$primary: #014069;
-$secondary: #692a01;
+// $primary: #014069;
+$primary: #f27729;
+$black: #111416;
+// $secondary: #692a01;
+$secondary: #1e93e5;
 $utilities: (
   "width": (
     property: width,
@@ -23,13 +26,18 @@ $position-values: (
   50: 50%,
   100: 100%,
 );
-$nav-link-hover-color: white;
+$nav-link-hover-color: $secondary;
+// $nav-link-hover-color: white;
 $nav-link-color: gray;
 
 @import "~bootstrap/scss/bootstrap";
 
 img {
   width: 100%;
+}
+
+a {
+  color: $secondary;
 }
 
 header i {

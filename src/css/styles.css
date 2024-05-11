@@ -7621,6 +7621,10 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
+.w-80 {
+  width: 80% !important;
+}
+
 .w-100 {
   width: 100% !important;
 }
@@ -12074,9 +12078,6 @@ header ul {
 }
 
 @media (max-width: 767.98px) {
-  header h2, header .h2 {
-    max-width: 350px;
-  }
   .title-overlay-wrapper h1, .title-overlay-wrapper .h1 {
     font-size: 3rem;
   }

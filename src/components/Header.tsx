@@ -12,7 +12,7 @@ export default function Header() {
     <>
       <header className="bg-primary p-3 text-center text-white d-flex flex-column justify-content-center align-items-center position-relative">
         <button
-          className="d-md-none btn btn-primary position-absolute start-5px top-5px text-white"
+          className="d-md-none btn btn-primary position-absolute start-5px top-5px p-1 text-white"
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
@@ -20,7 +20,9 @@ export default function Header() {
         >
           <i className="fa-solid fa-bars"></i>
         </button>
-        <h2>Stockton Manges Programming Portfolio</h2>
+        <h2 className="w-80 w-md-auto">
+          Stockton Manges Programming Portfolio
+        </h2>
         <Collapse in={navOpen}>
           <div className="d-md-flex">
             <ul className="nav nav-pills h-0 overflow-hidden bg-primary align-items-center justify-content-center flex-column flex-md-row d-md-flex">

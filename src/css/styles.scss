@@ -10,6 +10,7 @@ $utilities: (
       30: 30%,
       50: 50%,
       75: 75%,
+      80: 80%,
       100: 100%,
       auto: auto,
       fit-content: fit-content,
@@ -106,10 +107,6 @@ header ul {
 }
 
 @include media-breakpoint-down(md) {
-  header h2 {
-    max-width: 350px;
-  }
-
   .title-overlay-wrapper h1 {
     font-size: 3rem;
   }

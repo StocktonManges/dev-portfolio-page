@@ -15,6 +15,7 @@ export const NavProvider = ({ children }: { children: ReactNode }) => {
     fullstackPortfolio: "/portfolio/fullstack",
     frontEndPortfolio: "/portfolio/front-end",
     experience: "/experience",
+    contact: "/contact",
   };
 
   return (

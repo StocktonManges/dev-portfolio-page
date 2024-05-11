@@ -6,6 +6,7 @@ import FullstackPortfolio from "./components/FullstackPortfolio";
 import FrontEndPortfolio from "./components/FrontEndPortfolio";
 import Experience from "./components/Experience";
 import Error404 from "./components/Error404";
+import Contact from "./components/Contact";
 
 export default function App() {
   const { navUrls } = useNav();
@@ -24,6 +25,7 @@ export default function App() {
             element={<FrontEndPortfolio />}
           />
           <Route path={navUrls.experience} element={<Experience />} />
+          <Route path={navUrls.contact} element={<Contact />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>

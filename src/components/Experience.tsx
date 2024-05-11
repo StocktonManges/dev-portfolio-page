@@ -1,5 +1,3 @@
-import HomeButton from "./HomeButton";
-
 export default function Experience() {
   const programmingResume =
     "https://docs.google.com/document/d/1lrQ6TN8MYsMwog_cso58g7SpOatRjKN8r9Dg5W_49ms/edit?usp=sharing";
@@ -8,7 +6,6 @@ export default function Experience() {
 
   return (
     <section className="experience-page-wrapper container text-center d-flex flex-column align-items-center">
-      <HomeButton />
       <h1 className="my-5">Experience</h1>
 
       <div className="row w-100 d-flex flex-wrap justify-content-center">
@@ -35,13 +32,13 @@ export default function Experience() {
           href={programmingResume}
           className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
         >
-          <strong>Programming Resume</strong>
+          <strong>Resume</strong>
         </a>
 
         <a
           target="_blank"
           href={jobResume}
-          className="col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
+          className="d-none col btn btn-outline-primary fs-1 border-5 d-flex justify-content-center align-items-center"
         >
           <strong>Job Resume</strong>
         </a>

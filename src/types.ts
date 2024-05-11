@@ -31,6 +31,7 @@ type NavUrls = {
   fullstackPortfolio: string;
   frontEndPortfolio: string;
   experience: string;
+  contact: string;
 };
 
 export type TypeNavProvider = {

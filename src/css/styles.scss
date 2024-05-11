@@ -16,11 +16,28 @@ $utilities: (
     ),
   ),
 );
+$position-values: (
+  0: 0,
+  5px: 5px,
+  50: 50%,
+  100: 100%,
+);
+$nav-link-hover-color: white;
+$nav-link-color: gray;
 
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap";
 
 img {
   width: 100%;
+}
+
+header i {
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+
+header ul {
+  transition: 0.3s;
 }
 
 .profile-img {
@@ -28,7 +45,6 @@ img {
 }
 
 .title-overlay-wrapper {
-  opacity: 0;
   transition: 0.3s;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 1;
@@ -90,6 +106,10 @@ img {
 }
 
 @include media-breakpoint-down(md) {
+  header h2 {
+    max-width: 350px;
+  }
+
   .title-overlay-wrapper h1 {
     font-size: 3rem;
   }

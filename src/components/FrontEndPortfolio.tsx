@@ -2,7 +2,7 @@ import { frontEndPortfolio } from "../utils";
 
 export default function FullstackPortfolio() {
   return (
-    <section className="front-end-page-wrapper container d-flex flex-column align-items-center">
+    <section className="container d-flex flex-column align-items-center">
       <h1 className="mt-5">Front End Portfolio</h1>
       <div className="front-end-card-wrapper w-md-50">
         {frontEndPortfolio.map(

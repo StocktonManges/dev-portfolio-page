@@ -20,6 +20,26 @@ export const fullstackPortfolio = <FullstackCardInfo[]>[
 
 export const frontEndPortfolio = <FrontEndCardInfo[]>[
   {
+    title: "Event Pro",
+    website: undefined,
+    techStack: [
+      "React JS",
+      "HTML",
+      "CSS",
+      "TypeScript",
+      "JavaScript",
+      "Zod",
+      "JSON Server",
+      "Socket.io",
+      "React Router DOM",
+    ],
+    shortDescription:
+      "A web application designed to simplify event management for businesses while providing clients with a streamlined booking process.",
+    longDescription:
+      "A web application designed to simplify event management for businesses while providing clients with a streamlined booking process.",
+    github: "https://github.com/StocktonManges/event-pro-ts",
+  },
+  {
     title: "Elevation Peaks Landing Page",
     website: "https://elevation-peaks.netlify.app/",
     techStack: ["React JS", "HTML", "CSS", "Email JS", "TypeScript"],

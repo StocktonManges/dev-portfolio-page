@@ -23,9 +23,9 @@ export default function HomePage() {
               through code. I find it especially fulfilling when I'm able to
               help my team successfully reach goals that bring us closer to our
               ultimate vision. With a proven history of effective communication
-              and adapting quickly to new challenges, as demonstrated by my
-              resume, I'm confident I can support any team in their endeavors to
-              reach and surpass the most challenging of objectives.
+              and adapting quickly to new challenges, I'm confident I can
+              support any team in their endeavors to reach and surpass the most
+              challenging of objectives.
             </p>
             <p className="fs-5">
               I'm committed to continuous learning and believe in seizing every

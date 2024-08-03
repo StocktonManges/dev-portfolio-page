@@ -2,7 +2,7 @@ import { fullstackPortfolio } from "../utils";
 
 export default function FullstackPortfolio() {
   return (
-    <section className="fullstack-page-wrapper container d-flex flex-column align-items-center">
+    <section className="container d-flex flex-column align-items-center">
       <h1 className="mt-5">Fullstack Portfolio</h1>
       <div className="fullstack-card-wrapper w-md-50">
         {fullstackPortfolio.map(

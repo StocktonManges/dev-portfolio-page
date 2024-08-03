@@ -12089,11 +12089,6 @@ header ul {
     bottom: 1.5rem;
     top: auto;
   }
-  .experience-page-wrapper,
-  .front-end-page-wrapper,
-  .fullstack-page-wrapper {
-    margin-bottom: 5rem;
-  }
 }
 @media (max-width: 575.98px) {
   .title-overlay-wrapper h1, .title-overlay-wrapper .h1 {

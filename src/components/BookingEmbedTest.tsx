@@ -17,6 +17,8 @@ export default function BookingEmbedTest() {
     iframe.setAttribute('title', 'Booking Form');
     iframe.height = '800';
     container.appendChild(iframe);
+    formRef.current = true;
+
     window.addEventListener('message', function (e) {
       if (e.data && e.data.type === 'crown-booking-form-height' && e.data.publicKey === 'cmnne7s4q000004lddm244de2') {
         iframe.height = e.data.height;

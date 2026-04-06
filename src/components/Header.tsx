@@ -29,9 +29,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.home}
-                  className={`nav-link my-1 ${
-                    pathname === navUrls.home && "text-secondary"
-                  }`}
+                  className={`nav-link my-1 ${pathname === navUrls.home && "text-secondary"
+                    }`}
                 >
                   Home
                 </a>
@@ -39,9 +38,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.fullstackPortfolio}
-                  className={`nav-link my-1 ${
-                    pathname === navUrls.fullstackPortfolio && "text-secondary"
-                  }`}
+                  className={`nav-link my-1 ${pathname === navUrls.fullstackPortfolio && "text-secondary"
+                    }`}
                 >
                   Fullstack
                 </a>
@@ -49,9 +47,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.frontEndPortfolio}
-                  className={`nav-link my-1 ${
-                    pathname === navUrls.frontEndPortfolio && "text-secondary"
-                  }`}
+                  className={`nav-link my-1 ${pathname === navUrls.frontEndPortfolio && "text-secondary"
+                    }`}
                 >
                   Front End
                 </a>
@@ -59,9 +56,8 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.experience}
-                  className={`nav-link my-1 ${
-                    pathname === navUrls.experience && "text-secondary"
-                  }`}
+                  className={`nav-link my-1 ${pathname === navUrls.experience && "text-secondary"
+                    }`}
                 >
                   Experience
                 </a>
@@ -69,11 +65,19 @@ export default function Header() {
               <li className="nav-item">
                 <a
                   href={navUrls.contact}
-                  className={`nav-link my-1 ${
-                    pathname === navUrls.contact && "text-secondary"
-                  }`}
+                  className={`nav-link my-1 ${pathname === navUrls.contact && "text-secondary"
+                    }`}
                 >
                   Contact
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href={navUrls.bookingEmbedTest}
+                  className={`nav-link my-1 ${pathname === navUrls.bookingEmbedTest && "text-secondary"
+                    }`}
+                >
+                  Booking Embed Test
                 </a>
               </li>
             </ul>

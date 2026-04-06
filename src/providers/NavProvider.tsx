@@ -16,6 +16,7 @@ export const NavProvider = ({ children }: { children: ReactNode }) => {
     frontEndPortfolio: "/portfolio/front-end",
     experience: "/experience",
     contact: "/contact",
+    bookingEmbedTest: "/embed/booking-test",
   };
 
   return (

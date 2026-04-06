@@ -27,7 +27,7 @@ export default function App() {
           />
           <Route path={navUrls.experience} element={<Experience />} />
           <Route path={navUrls.contact} element={<Contact />} />
-          <Route path="embed/booking-test" element={<BookingEmbedTest />} />
+          <Route path={navUrls.bookingEmbedTest} element={<BookingEmbedTest />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>

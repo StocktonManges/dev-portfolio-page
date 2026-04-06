@@ -32,6 +32,7 @@ type NavUrls = {
   frontEndPortfolio: string;
   experience: string;
   contact: string;
+  bookingEmbedTest: string;
 };
 
 export type TypeNavProvider = {

@@ -7,6 +7,7 @@ import FrontEndPortfolio from "./components/FrontEndPortfolio";
 import Experience from "./components/Experience";
 import Error404 from "./components/Error404";
 import Contact from "./components/Contact";
+import BookingEmbedTest from "./components/BookingEmbedTest";
 
 export default function App() {
   const { navUrls } = useNav();
@@ -26,6 +27,7 @@ export default function App() {
           />
           <Route path={navUrls.experience} element={<Experience />} />
           <Route path={navUrls.contact} element={<Contact />} />
+          <Route path="embed/booking-test" element={<BookingEmbedTest />} />
         </Route>
         <Route path="*" element={<Error404 />} />
       </Routes>

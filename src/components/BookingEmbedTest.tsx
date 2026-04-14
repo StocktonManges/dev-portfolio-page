@@ -5,8 +5,8 @@ export default function BookingEmbedTest() {
   const formRef = useRef<Boolean>(false);
 
   const func = function () {
-    var containerId = 'crown-booking-form-cmnne7s4q000004lddm244de2';
-    var src = 'https://crown-dev-git-schedule-feature-stocktonmanges-projects.vercel.app/embed/booking-forms/cmnne7s4q000004lddm244de2';
+    var containerId = 'crown-booking-form-cmnypg9o70001h3pprbj0ftj0';
+    var src = 'https://crown-dev-git-schedule-feature-stocktonmanges-projects.vercel.app/embed/booking-forms/cmnypg9o70001h3pprbj0ftj0';
     var container = document.getElementById(containerId);
     if (!container) return;
     var iframe = document.createElement('iframe');
@@ -20,7 +20,7 @@ export default function BookingEmbedTest() {
     formRef.current = true;
 
     window.addEventListener('message', function (e) {
-      if (e.data && e.data.type === 'crown-booking-form-height' && e.data.publicKey === 'cmnne7s4q000004lddm244de2') {
+      if (e.data && e.data.type === 'crown-booking-form-height' && e.data.publicKey === 'cmnypg9o70001h3pprbj0ftj0') {
         iframe.height = e.data.height;
       }
     });
@@ -36,7 +36,7 @@ export default function BookingEmbedTest() {
     <section className="container p-3">
       <h1 className="text-center mb-3">Booking embed simple iframe</h1>
       <iframe
-        src="https://crown-dev-git-schedule-feature-stocktonmanges-projects.vercel.app/embed/booking-forms/cmnne7s4q000004lddm244de2"
+        src="https://crown-dev-git-schedule-feature-stocktonmanges-projects.vercel.app/embed/booking-forms/cmnypg9o70001h3pprbj0ftj0"
         width="100%"
         height="800"
         style={{ border: "none", borderRadius: 8 }}
@@ -46,7 +46,7 @@ export default function BookingEmbedTest() {
       ></iframe>
 
       <h1 className="text-center mb-3">Booking embed with div</h1>
-      <div id="crown-booking-form-cmnne7s4q000004lddm244de2"></div>
+      <div id="crown-booking-form-cmnypg9o70001h3pprbj0ftj0"></div>
     </section>
   );
 }
